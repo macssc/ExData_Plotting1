@@ -18,6 +18,8 @@ data$Sub_metering_1 <- as.numeric(as.character(data$Sub_metering_1))
 data$Sub_metering_2 <- as.numeric(as.character(data$Sub_metering_2))
 # Sub_metering_3 is already numeric
 data$Global_reactive_power <- as.numeric(as.character(data$Global_reactive_power))
+data$Voltage <- as.numeric(as.character(data$Voltage))
+
 
 # Add a column with the date and time
 data$DateTime <- strptime(paste(data$Date, data$Time), '%Y-%m-%d %H:%M:%S')
